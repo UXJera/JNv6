@@ -1,0 +1,50 @@
+.landing {
+  min-height: 100vh;
+  background: url("/img/bg/stars-bg.jpg");
+  background-position:center bottom;
+  background-size: cover;
+}
+
+header {
+  min-height: 70vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  & > * {padding: .5em 0;}
+  h1, h3 {
+    color:$color-1;
+    @include fonts-content;
+    letter-spacing: .05em;
+    text-shadow: 2px 2px 2px black;
+  }
+  h1 {padding-bottom: 1em;}
+  button{
+    background: $color-comp;
+    box-shadow: 5px 5px 5px #111;
+    padding: .25em 2em;
+    font-weight: 500;
+    @include fast-animation;
+    a {
+      color: $color-1;
+      @include fast-animation;
+    }
+    &:hover {
+      background: lighten($color-2, 10%);
+      a {color:$color-1;}
+    }
+  }
+  @include button-std;
+  div.button {font-size: 1.3em;}
+}
+
+@media screen and (min-width: 720px) {
+  header {min-height: 90vh;
+    h1 {padding-bottom: 3em;}
+  }
+  .landing {
+    background:url("/img/bg/stars-bg-hd.jpg");
+    background-position:center center;
+  }
+}

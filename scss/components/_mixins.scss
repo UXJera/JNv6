@@ -1,0 +1,26 @@
+@mixin fullbg { min-height: 100vh;	background-attachment: fixed;	background-size: cover;}
+@mixin box-shadow {box-shadow: 5px 5px 5px #111;}
+@mixin fast-animation {transition: all .5s;}
+@mixin slow-animation {transition: all 1.5s;}
+@mixin border-bottom {border-bottom: 1px solid #222;}
+@mixin fonts-header {font-family: teko,'century gothic', arial, sans-serif;}
+@mixin fonts-content{font-family: Karla, lato, arial, sans-serif;}
+@mixin button-std{
+  div.button{
+    margin-top:1em;
+    @include fonts-content;
+    background: $color-comp;
+    box-shadow: 5px 5px 5px #111;
+    font-weight: 500;
+    @include fast-animation;
+    a {
+      padding: .5em 2em;
+      color: $color-1;
+      @include fast-animation;
+    }
+    &:hover {
+      background: lighten($color-2, 10%);
+      a {color:$color-1;}
+    }
+  }
+}
