@@ -43,10 +43,11 @@ body {background: #333;}
   }
   .close-container {
     padding-right: 1em;
+    margin-top: 1em;
     align-self: flex-end;
     a {color:white; @include fast-animation;}
     a:after {
-      content: "\f057"; // Times
+      content: "\f057";
       font: 2em fontawesome;
     }
   }
@@ -102,7 +103,7 @@ nav {
     .sub-nav{
       }
   }
-  .logo {padding-left: 2em;}
+  .logo {padding-left: 1em;}
   .nav-group {flex: 5}
 }
 
@@ -145,6 +146,7 @@ nav {
         li a.sub-nav {transition: all 1.5s;
         }
       }
+    .logo {padding-left: 2em;}
     }
   }
 }
@@ -154,7 +156,7 @@ nav {
 
   .side-nav {
     .close-container {
-      margin: auto 0 1em 0;
+      margin: 1em 0;
       padding-right: 1em;
       align-self: flex-end;
       a {color:white; @include fast-animation;}

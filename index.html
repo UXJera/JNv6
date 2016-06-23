@@ -7,14 +7,18 @@
 
 	<title>Jeremiah Nyman | UX Research and Designer</title>
 	<meta name="author" content="Jera"></meta>
-	<meta name="description" content="This is the portfolio website for Jeremiah Nyman, a UX Research and Designer based out of Wichita, KS who will be relocating to Seattle, WA in a number of months."></meta>
-	<meta name="robots" content="noarchive, noimageindex" />
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<!--link rel="shortcut icon" href="/favicon/favicon.ico"-->
+	<meta name="description" content="This is the portfolio website for Jeremiah Nyman, a UX Research and Designer located near Seattle, WA."></meta>
 
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script-->
+	<meta name="robots" content="noarchive, noimageindex" />
+
+	<link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -24,7 +28,7 @@
   <ul>
 		<li class="category"><a>UX Design</a></li>
     <li><a>Websites and Design</a></li>
-    <li><a>Content Creation</a></li>
+    <li><a>Content Strategy</a></li>
     <li><a>Wireframes & Mockups</a></li>
 		<li class="category"><a>UX Research</a></li>
     <li><a>Video Games and Attention</a></li>
@@ -32,9 +36,10 @@
 		<li><a>Wichita State Social Media</a></li>
 		<li class="category"><a>Resume</a></li>
   </ul>
+	<div class="close-container closing"><a></a></div>
 </div>
 <div class="main-wrapper">
-<div class="landing">
+<div class="landing" id="landing">
   <nav>
     <ul class="logo">
 			<li><a href="#" class="sub-nav"></a></li>
@@ -51,70 +56,204 @@
   <header>
 		<h1>This is the landing message</h1>
 		<h3>And a cliche secondary message</h3>
-		<div class=""></div>
-		<div class="button"><a href="#about-me">Find Out More</a></div>
+		<div class="next-page"><a href="#about-me"><i class="fa fa-angle-down"></i></a></div>
   </header>
 </div>
 
 <main>
-  <div class="content-wrapper half" id="about-me">
+  <div class="content-wrapper" id="about-me">
 		<h2>Hello! My name is Jeremiah Nyman</h2>
-		<div class="content-container column">
+		<div class="content-container">
 			<div class="img-container-single">
 				<img class="headshot" src="/img/jnheadshot.jpg" alt="Jeremiah Nyman headshot">
 			</div>
-			<p>I am a User Experience Design and Researcher who is passionate about understanding how people think and behave.</p>
-			<p>There are a few sentences here.</p>
 		</div>
-  </div>
+		<div class="content-container">
+			<p>My passion is understanding how people think and why they make the decisions that they do.</p>
+			<p>I began my journey into Psychology back in 2010, where I started learning behavioral psychology at Wichita State University.</p>
+			<p>Over the next couple of years, I interned at a Human Factors lab, learning how people interact with technology and how behavior is shaped by that.</p>
+			<p>After graduating college in 2012, I knew that my journey into User Experience wasn't complete, and the next path was to learn more about websites and mobile applications.</p>
+			<p>Here we are now in 2016, and below are samples of the user experience related work I have been a part of.</p>
+		</div>
+
+		<div id="about-me-tabs">
+			<ul>
+				<li><a href="#tabs-1">Education</a></li>
+				<li><a href="#tabs-2">Experience</a></li>
+				<li><a href="#tabs-3">Proficiency</a></li>
+			</ul>
+			<div class="about-me-main">
+				<div id="tabs-1" class="tabs-content">
+					<div>
+						<h4>Wichita State University</h4>
+						<img src="/img/wsubig.jpg" />
+						<p>2009 - 2012</p>
+						<p>B.A. - Psychology - Human Factors</p>
+					</div>
+					<div>
+						<h4>Other Education</h4>
+						<p>Butler Community College - 2006-2008</p>
+						<p>A.A. - Liberal Arts</a>
+					</div>
+				</div>
+				<div id="tabs-2" class="tabs-content">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+				<div id="tabs-3" class="tabs-content">
+					<div>
+						<h4>User Research Abilities</h4>
+						<ul>
+							<li>Survey Design</li>
+							<li>Focus Groups</li>
+							<li>Personas and Scenarios</li>
+							<li>Interviews</li>
+							<li>Usability Testing</li>
+						</ul>
+					</div>
+					<div>
+						<h4>Coding Proficiencies</h4>
+						<ul>
+							<li>HTML & CSS</li>
+							<li>Frameworks: Bootstrap & Foundation</li>
+							<li>Advanced CSS: Sass, Compass, Flexbox</li>
+							<li>Basic Javascript, JQuery, and AngularJS</li>
+						</ul>
+					</div>
+					<div>
+						<h4>Research Assistance Programs</h4>
+						<ul>
+							<li>MS Excel</li>
+							<li>SPSS</li>
+							<li>Survey Monkey</li>
+							<li>Google Forms</li>
+							<li>Google Analytics</li>
+						</ul>
+					</div>
+					<div>
+						<h4>Graphic Design and Code Programs</h4>
+						<ul>
+							<li>Adobe Photoshop 5.5</li>
+							<li>Adobe Illustrator 6.0</li>
+							<li>Adobe Premire Pro</li>
+							<li>GitHub</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="about-me-collapse">
+			<div class="item-1">
+				<div>
+					<p>Wichita State University - 2009 - 2012</p>
+					<p>B.A. - Psychology - Human Factors</p>
+					<br>
+					<p>Butler Community College - 2006-2008</p>
+					<p>A.A. - Liberal Arts</a>
+				</div>
+			</div>
+			<div class="item-2">This is a Div for Item 1</div>
+			<div class="item-3">
+				<div>
+					<h4>User Research Abilities</h4>
+					<ul>
+						<li>Survey Design</li>
+						<li>Focus Groups</li>
+						<li>Personas and Scenarios</li>
+						<li>Interviews</li>
+						<li>Usability Testing</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Coding Proficiencies</h4>
+					<ul>
+						<li>HTML & CSS</li>
+						<li>Frameworks: Bootstrap & Foundation</li>
+						<li>Advanced CSS: Sass, Compass, Flexbox</li>
+						<li>Basic Javascript, JQuery, and AngularJS</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Research Assistance Programs</h4>
+					<ul>
+						<li>MS Excel</li>
+						<li>SPSS</li>
+						<li>Survey Monkey</li>
+						<li>Google Forms</li>
+						<li>Google Analytics</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Graphic Design and Code Programs</h4>
+					<ul>
+						<li>Adobe Photoshop 5.5</li>
+						<li>Adobe Illustrator 6.0</li>
+						<li>Adobe Premire Pro</li>
+						<li>GitHub</li>
+					</ul>
+				</div>
+			</div>
+			<div class="next-page"><a href="#design"><i class="fa fa-angle-down"></i></a></div>
+	  </div>
+	</div>
+
   <div class="content-wrapper" id="design">
     <h2>Here are the awesome things that I've designed</h2>
-		<div class="content-container row even">
+		<div class="content-container row">
 			<div class="container-triple">
-				<img class="img-triple" src="/img/home/sczss.jpg" alt="Jeremiah Nyman headshot">
-				<h4>Full Websites</h4>
+				<a href="#">
+					<img class="img-triple" src="/img/home/sczss.jpg" alt="Jeremiah Nyman headshot">
+					<h4>Websites & Design</h4>
+				</a>
 				<p>I've created several websites and learned many lessons. Here are the insights I've learned from these projects.</p>
-				<div class="button"><a href="#">Read More</a></div>
 			</div>
 			<div class="container-triple">
-				<img class="img-triple" src="/img/home/ksncontent.jpg" alt="Jeremiah Nyman headshot">
-				<h4>Content Creation</h4>
+				<a href="#">
+					<img class="img-triple" src="/img/home/ksncontent.jpg" alt="Jeremiah Nyman headshot">
+					<h4>Content Strategy</h4>
+				</a>
 				<p>Here are featured news articles that the KSN news crew and I have created to add more depth to your typical news story.</p>
-				<div class="button"><a href="#">Read More</a></div>
 			</div>
 			<div class="container-triple">
-				<img class="img-triple" src="/img/jnheadshot.jpg" alt="Jeremiah Nyman headshot">
-				<h4>Mockups and Designs</h4>
+				<a href="#">
+					<img class="img-triple" src="/img/jnheadshot.jpg" alt="Jeremiah Nyman headshot">
+					<h4>Mockups and Designs</h4>
+				</a>
 				<p>Every great work starts with a idea and a plan. </p>
-				<div class="button"><a href="#">Read More</a></div>
 			</div>
 		</div>
+		<div class="next-page"><a href="#research"><i class="fa fa-angle-down"></i></a></div>
   </div>
+
   <div class="content-wrapper half" id="research">
     <h2>Did I mention I do research?</h2>
 		<div class="content-container row">
 			<div class="container-triple">
-				<i class="fa fa-gamepad"></i>
-				<h4>Video Games and Attention</h4>
+				<a href="#">
+					<i class="fa fa-gamepad"></i>
+					<h4>Video Games and Attention</h4>
+				</a>
 				<p>This is sub-content.</p>
-				<div class="button"><a href="#">Read More</a></div>
 			</div>
 			<div class="container-triple">
-				<i class="fa fa-bar-chart"></i>
-				<h4>eSports Analytics</h4>
+				<a href="#">
+					<i class="fa fa-bar-chart"></i>
+					<h4>eSports Analytics</h4>
+				</a>
 				<p>This is sub-content.</p>
-				<div class="button"><a href="#">Read More</a></div>
 			</div>
 			<div class="container-triple">
-				<i class="fa fa-comments-o"></i>
-				<h4>Wichita State Social Media Analysis</h4>
+				<a href="#">
+					<i class="fa fa-comments-o"></i>
+					<h4>Wichita State Social Media Analysis</h4>
+				</a>
 				<p>This is sub-content.</p>
 				<p>"Where do I even start?"</p>
-				<div class="button"><a href="#">Read More</a></div>
 			</div>
 		</div>
+		<div class="next-page"><a href="#research"><i class="fa fa-angle-down"></i></a></div>
   </div>
-  <div class="content-wrapper" id="credentials">
+
+  <!--div class="content-wrapper" id="credentials">
     <h2>These are my proficiencies</h2>
 		<div class="content-container row">
 			<div class="container-triple">
@@ -133,35 +272,52 @@
 				<p>This is sub-content.</p>
 			</div>
 		</div>
-  </div>
-	<div class="content-wrapper" id="">
+		<div class="next-page"><a href="#references"><i class="fa fa-angle-down"></i></a></div>
+  </div-->
+	<div class="content-wrapper" id="references">
 		<h2>Here are what nice people have to say about me</h2>
 		<div class="content-container row">
 			<div class="container-triple">
-				<img class="img-triple" src="/img/jnheadshot.jpg" alt="Jeremiah Nyman headshot">
-				<h4>Sub-header.</h4>
+				<img class="img-triple headshot" src="/img/kwhite.jpg" alt="Jeremiah Nyman headshot">
+				<h4>Kevin White</h4>
+				<h6>KSN.com</h6>
 				<p>This is sub-content.</p>
 			</div>
 			<div class="container-triple">
-				<img class="img-triple" src="/img/jnheadshot.jpg" alt="Jeremiah Nyman headshot">
-				<h4>Sub-header.</h4>
+				<img class="img-triple headshot" src="/img/aj.png" alt="Jeremiah Nyman headshot">
+				<h4>Anthony Johnson</h4>
 				<p>This is sub-content.</p>
 			</div>
 			<div class="container-triple">
-				<img class="img-triple" src="/img/jnheadshot.jpg" alt="Jeremiah Nyman headshot">
-				<h4>Sub-header.</h4>
+				<img class="img-triple headshot" src="/img/jnheadshot.jpg" alt="Jeremiah Nyman headshot">
+				<h4>James Hook</h4>
 				<p>This is sub-content.</p>
 			</div>
 		</div>
+		<div class="next-page"><a href="#research"><i class="fa fa-angle-down"></i></a></div>
 	</div>
 	<div class="content-wrapper" id="contact">
 		<h2>Want to get in touch?</h2>
 		<div class="content-container row">
 		</div>
+		<footer>
+			<ul class="footer">
+				<li><a href="#">Resume</a></li>
+				<li><a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li><p>Designed by Jera in 2016</p></li>
+			</ul>
+		</footer>
+		</main>
 	</div>
-</main>
-<footer>
-</footer>
 </div>
-<script type="text/javascript" src="/js/app.min.js"></script>
+
+<!-- OFFLINE FALLBACKS>
+<script src="/fallback/jquery-3.0.0.min.js"></script>
+<script src="/fallback/jquery-ui.min.js"></script> -->
+
+<script type="text/javascript" src="/js/app.js"></script>
+
 </body>

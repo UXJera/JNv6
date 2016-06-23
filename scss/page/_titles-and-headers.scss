@@ -1,5 +1,43 @@
 .content-wrapper h2 {
   letter-spacing: .03em;
-  padding:.5em; 
+  padding:.5em;
   text-align: center;
+  line-height: .75em;
+}
+
+.content-wrapper:nth-of-type(even){
+  .content-container .container-triple a {
+    color: $color-1;
+    h4 {
+      background:$color-5;
+      @include fast-animation;
+      &:hover{background: $color-2; color: $color-4;}
+    }
+  }
+}
+
+.content-wrapper:nth-of-type(odd){
+  .content-container .container-triple a {
+    color: $color-5;
+    h4 {
+      background:$color-1;
+      @include fast-animation;
+      &:hover{background: $color-4; color: $color-2;}
+    }
+  }
+}
+
+.container-triple{
+  a { @include flex-center;
+    h4 {
+      width: 75%;
+      padding: .125em .25em;
+      text-align: center;
+      margin-top: .5em;
+      @include border-shadow;
+      &:hover{background:$color-3;}
+    }
+  }
+  p {padding: .25em 0;}
+  i {color:$color-1; font-size: 12em;}
 }

@@ -1,12 +1,5 @@
-.landing {
-  min-height: 100vh;
-  background: url("/img/bg/stars-bg.jpg");
-  background-position:center bottom;
-  background-size: cover;
-}
-
 header {
-  min-height: 70vh;
+  min-height: 90vh;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -14,37 +7,43 @@ header {
   text-align:center;
   & > * {padding: .5em 0;}
   h1, h3 {
+    display:flex;
+    align-items:center;
     color:$color-1;
     @include fonts-content;
     letter-spacing: .05em;
     text-shadow: 2px 2px 2px black;
+    flex:2;
   }
-  h1 {padding-bottom: 1em;}
-  button{
-    background: $color-comp;
-    box-shadow: 5px 5px 5px #111;
-    padding: .25em 2em;
-    font-weight: 500;
-    @include fast-animation;
-    a {
-      color: $color-1;
-      @include fast-animation;
-    }
-    &:hover {
-      background: lighten($color-2, 10%);
-      a {color:$color-1;}
-    }
-  }
-  @include button-std;
-  div.button {font-size: 1.3em;}
+  h1 {flex:6; align-items:flex-end;}
+  i {color:$color-1; @include fast-animation;}
+  i:hover {color:$color-3;}
 }
 
+.next-page {
+  flex:1;
+  padding: 0;
+  a {font-size: 5em; @include fast-animation;}
+  a{color: $color-2;}
+  a:hover {color: $color-4;}
+}
+
+.education-hide {
+	display: none;
+  background:red;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-bottom: .5em;
+	max-width: 90%;
+	padding: .5em 1em;
+	p {padding: .5em 0;}
+}
+
+
 @media screen and (min-width: 720px) {
-  header {min-height: 90vh;
-    h1 {padding-bottom: 3em;}
-  }
-  .landing {
-    background:url("/img/bg/stars-bg-hd.jpg");
-    background-position:center center;
-  }
+  header {min-height: 80vh;}
+}
+
+@media screen and (min-width: 900px) {
+  header {min-height: 90vh;}
 }

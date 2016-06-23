@@ -1,0 +1,71 @@
+.about-me-collapse {
+  display:none;
+  background:$color-5;
+  justify-content: flex-start;
+  width: 80vw;
+  @include border;
+  > div {
+    display:flex;
+    flex-direction:column;
+    padding: .25em 1em;
+  }
+}
+
+.ui-tabs-active.ui-state-active li a{
+  color: $color-1;
+}
+
+#about-me-tabs {
+  display:flex;
+  flex-direction:column;
+  width: 80vw;
+  ul {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: .4em;
+    a {
+        color:$color-3;
+        font-size: 1.75em;
+        @include fast-animation;
+        padding:0;
+        margin: 0;
+        &:hover, {color:$color-1;}
+    }
+  }
+  .about-me-main {margin-bottom: 1em;}
+  .about-me-main > div {
+    display:flex;
+    background: $color-1;
+    justify-content: flex-start;
+    flex:1;
+    flex-direction: row;
+    padding: 1em;
+    @include border-shadow;
+    flex-wrap:wrap;
+    p {padding: 0 .25em;}
+  }
+  .ui-tabs-active a {color:$color-1;}
+}
+
+.tabs-content {
+  justify-content: space-around;
+  div {
+    flex-wrap:wrap;
+    flex: 1 0 auto;
+    margin: .5em 0;
+    ul {display:flex;flex-direction:column;}
+    h4 {text-align: center; font-size:1.5em;}
+    h4, li, p {color:$color-5;}
+    li, p {flex-basis: content; @include fonts-content;}
+    img {max-width: 70vw; border-radius: 10px; display:flex; margin: .5em auto;}
+  }
+}
+
+@media screen and (min-width: 785px) {
+  #about-me-tabs .about-me-main > div {justify-content: center;
+  }
+  .tabs-content div {
+    flex-basis: 35vw;
+    img {max-width: 35vw;}
+  }
+}

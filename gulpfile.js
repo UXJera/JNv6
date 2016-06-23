@@ -13,9 +13,7 @@ var 	gulp	 		= require('gulp'), // Name variable after the module
 
 gulp.task("concatScripts", function() {
 		return gulp.src([
-			'js/jquery.min.js',
-//			'js/bootstrap.min.js',
-			'js/main.js']) // List of files in array
+			'js/*.js']) // List of files in array
 		.pipe(maps.init())
 		.pipe(concat("app.js"))  // File to concat to
 		.pipe(maps.write('./'))
