@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $('.sub-nav').on('click', function() {
-    $('.main-wrapper').toggleClass('isOpen');
+    $('.page-wrapper').toggleClass('isOpen');
   });
   $('.closing').on('click', function() {
-    $('.main-wrapper').toggleClass('isOpen');
+    $('.page-wrapper').toggleClass('isOpen');
   });
 });

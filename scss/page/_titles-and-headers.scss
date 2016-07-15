@@ -1,12 +1,12 @@
-.content-wrapper h2 {
+// HOME PAGE
+
+.main-wrapper h2 {
   letter-spacing: .03em;
-  padding:.5em;
   text-align: center;
-  line-height: .75em;
 }
 
-.content-wrapper:nth-of-type(even){
-  .content-container .container-triple a {
+.main-wrapper:nth-of-type(odd){
+  .main-container .container-triple a {
     color: $color-1;
     h4 {
       background:$color-5;
@@ -16,8 +16,8 @@
   }
 }
 
-.content-wrapper:nth-of-type(odd){
-  .content-container .container-triple a {
+.main-wrapper:nth-of-type(even){
+  .main-container .container-triple a {
     color: $color-5;
     h4 {
       background:$color-1;
@@ -38,6 +38,20 @@
       &:hover{background:$color-3;}
     }
   }
-  p {padding: .25em 0;}
   i {color:$color-1; font-size: 12em;}
+}
+
+// CONTENT
+
+header{
+  text-align: center;
+  img {
+    width: 100%;
+    border-radius: 15px;
+    margin: .5em 0;
+    @include box-shadow;
+  }
+  h2 {font-size: 1.3em;}
+  h3 {font-size: 1.15em;}
+  h2, h3 {color: #666;}
 }

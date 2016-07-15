@@ -12,12 +12,21 @@
 @mixin border {border: 2px solid #222; border-radius: 10px;}
 @mixin border-bottom {border-bottom: 1px solid #222;}
 @mixin border-shadow{border-radius: 10px; box-shadow: 5px 5px 15px #111;}
+
 @mixin fonts-header {font-family: teko,'century gothic', arial, sans-serif;}
 @mixin fonts-content{font-family: Karla, lato, arial, sans-serif;}
+
 @mixin flex-center{
   display:flex;
   flex-direction: column;
   flex:1;
   align-items: center;
   justify-content: center;
+}
+@mixin flex-left{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  align-items: center;
+  justify-content: flex-start;
 }

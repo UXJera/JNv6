@@ -1,0 +1,107 @@
+.ksn-single {
+  flex-direction: row;
+  max-width: 95%;
+  justify-content: center;
+  div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: $cosmos;
+    flex: 1;
+    padding: .5em;
+    @include border-shadow;
+    a img {
+      max-width: 100%;
+      @include border-shadow;
+    }
+    .award-text {
+      display:flex;
+      flex-direction: column;
+      box-shadow: none;
+      p {
+        color:  $grey-1;
+        padding: .5em 0;
+      }
+    }
+  }
+}
+
+.ksn-triple {
+  flex-direction: column;
+  max-width: 95%;
+  justify-content: center;
+  div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: $cosmos;
+    flex: 1;
+    padding: .5em;
+    margin: .5em 0;
+    @include border-shadow;
+    h3 {
+      text-align: center;
+      text-decoration: none;
+      color: $color-2;
+      @include animation-fast;
+      padding: .5em 0;
+      &:hover {color:$cosmos-comp;}
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      img {
+        margin:0 auto;
+        max-width: 100%;
+        @include border-shadow;
+      }
+    }
+    p {
+      color: $grey-1;
+      padding: .5em 0;
+    }
+  }
+}
+
+@media screen and (min-width: 750px){
+  .ksn-triple {max-width: 75%;}
+  .ksn-triple div p {max-width: 100%;}
+}
+
+@media screen and (min-width: 1000px){
+  .ksn-single {
+    max-width: 75%;
+    div {
+      flex-direction: row;
+      margin: .5em 0;
+      a img {
+        max-width: 50vw;
+      }
+    }
+  }
+  .ksn-triple {
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: stretch;
+    max-width: 95%;
+    div {
+      max-width: 30%;
+      margin: 0 .5%;
+      a img {max-width: 100%;}
+      p {max-width: 100%;}
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  .ksn-triple {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .ksn-triple {
+    max-width: 75%;
+  }
+}

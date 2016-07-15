@@ -53,7 +53,7 @@ body {background: #333;}
   }
 }
 
-.main-wrapper {
+.page-wrapper {
   flex:1;
   transform: translate3d(0,0,0);
   @include fast-animation;
@@ -95,7 +95,7 @@ nav {
     a {
       flex:auto;
       padding:.5em;
-      font-size: 1.5em;
+      font-size: 1.75em;
       color:white;
       text-decoration:none;
       text-shadow: -3px 3px 3px #999;
@@ -124,11 +124,11 @@ nav {
       line-height:1.5em;
     }
     .close-container {
-      a:hover {color:$color-comp;}
+      a:hover {color:$cosmos-comp;}
     }
   }
 
-  .main-wrapper {
+  .page-wrapper {
     &.isOpen {transform: translate3d(220px,0,0);}
   }
 
@@ -140,7 +140,10 @@ nav {
         transition: all .5s;
         &.buffer {flex:1;}
         &:hover {transform: translate(2px, -2px);}
-        a {padding: 1em;}
+        a {
+          padding: .5em 1em;
+          font-size: 1.25em;
+        }
       }
       &.logo {padding-top: 0;
         li a.sub-nav {transition: all 1.5s;

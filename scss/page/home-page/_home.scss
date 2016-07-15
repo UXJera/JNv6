@@ -3,19 +3,20 @@ body {
   flex-direction:column;
 }
 
-.content-wrapper {
+.main-wrapper {
   width: 100%;
   min-height: 50vh;
   @include flex-center;
   @include fonts-header;
-  &:nth-of-type(odd) {background: $color-5; color:$color-1;}
-  &:nth-of-type(even) {background: $color-1; color:$color-5;}
+  &:nth-of-type(even) {background: $color-5; color:$color-1;}
+  &:nth-of-type(odd) {background: $color-1; color:$color-5;}
   box-shadow: inset 0px 0px 15px black;
 }
 
-.content-container {
+.main-container {
   width:95%;
   padding-bottom: .5em;
+  margin:0 auto;
   &.column {flex-direction: column;}
   @include flex-center;
   @include fonts-content;
@@ -24,17 +25,17 @@ body {
 #about-me p {padding-bottom: .75em;}
 
 @media screen and (min-width: 775px) {
-  .content-container {
+  .main-container {
     max-width: 95%;
-    p {max-width: 80%;}
+    p {max-width: 80%; text-align:left; margin: 0 auto; }
   }
-  .content-container.row {flex-direction: row; align-items:flex-start;}
+  .main-container.row {flex-direction: row; align-items:flex-start;}
 }
 
 @media screen and (min-width: 1200px) {
-  .content-container {max-width: 85%;}
+  .main-container {max-width: 85%;}
 }
 
 @media screen and (min-width: 1400px) {
-  .content-container {max-width: 75%;}
+  .main-container {max-width: 75%;}
 }

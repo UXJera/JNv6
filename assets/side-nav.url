@@ -1,0 +1,12 @@
+<div class="title">Articles</div>
+<ul>
+	<li class="category"><a href="/design">UX Design</a></li>
+  <li><a href="/design/websites">Full Websites</a></li>
+  <li><a href="/design/content-strategy">Content Strategy</a></li>
+  <li><a href="/design/design-insights">Design Insights</a></li>
+	<li class="category"><a href="/research">UX Research</a></li>
+  <li><a href="/research/video-games-and-attention">Video Games and Attention</a></li>
+  <li><a href="/research/esports-analytics">Esports Analytics</a></li>
+	<li><a href="/research/wsu-social-media">Wichita State Social Media</a></li>
+	<li class="category"><a href="/resume">Resume</a></li>
+</ul>

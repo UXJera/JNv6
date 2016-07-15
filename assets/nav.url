@@ -1,0 +1,12 @@
+<nav>
+  <ul class="logo">
+		<li><a class="sub-nav"></a></li>
+		<li><a href="/">Jeremiah Nyman</a></li>
+	</ul>
+	<ul class="nav-group">
+		<li class="buffer"></li>
+		<li><a href="/designs">Designs</a></li>
+		<li><a href="/research">Research</a></li>
+		<li><a href="/resume">Resume</a></li>
+  </ul>
+</nav>

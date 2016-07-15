@@ -1,4 +1,4 @@
-header {
+.home header {
   min-height: 90vh;
   display:flex;
   flex-direction:column;
@@ -7,11 +7,12 @@ header {
   text-align:center;
   & > * {padding: .5em 0;}
   h1, h3 {
+    padding: .5em;
     display:flex;
     align-items:center;
     color:$color-1;
     @include fonts-content;
-    letter-spacing: .05em;
+    letter-spacing: .025em;
     text-shadow: 2px 2px 2px black;
     flex:2;
   }
@@ -41,9 +42,9 @@ header {
 
 
 @media screen and (min-width: 720px) {
-  header {min-height: 80vh;}
+  .home header {min-height: 80vh;}
 }
 
 @media screen and (min-width: 900px) {
-  header {min-height: 90vh;}
+  .home header {min-height: 90vh;}
 }

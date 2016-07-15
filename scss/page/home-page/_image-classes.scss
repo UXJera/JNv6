@@ -24,7 +24,7 @@
   border-radius: 50%;
 }
 
-.img-triple.headshot {border-radius: 50%; min-width:50%; min-height: 50%;}
+.img-triple.headshot {border-radius: 50%; min-width:50%; min-height: 50%; max-width: 200px; min-width: 200px;}
 
 @media screen and (min-width: 750px) {
   .img-container-single {

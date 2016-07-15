@@ -8,7 +8,20 @@
   background: url("/img/bg/desk-bg.jpg");
   background-position:center bottom;
   @include fullbg;
-  min-height: 100vh;
+  min-height: 70vh;
+}
+
+// BACKGROUND IMAGE FOR NAV ON CONTENT PAGES
+
+.page-wrapper.content {
+  background:url('/img/bg/stars-bg.jpg');
+  @include fullbg;
+}
+
+// COLOR BG FOR CONTENT PAGES
+
+.main-wrapper#websites {
+  background: $color-1;
 }
 
 @media screen and (min-width: 720px) {
