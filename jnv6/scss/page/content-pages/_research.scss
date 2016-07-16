@@ -1,0 +1,96 @@
+.research {
+  flex-direction: row;
+  flex-wrap: wrap;
+  background:$color-5;
+  @include box-shadow-img;
+  .content-container {
+    flex-direction: row;flex-wrap:wrap;
+    a {color: $color-2; @include animation-fast;
+      &:hover {color: $cosmos-comp;}
+    }
+  }
+  p {
+    color: $color-1;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  img.float-left {float:left; clear:both; margin-right: .5em;}
+  img.float-right {float:right; clear:both;margin-left: .5em;}
+  .ux-box {
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .25em;
+    background: $cosmos;
+    width: 80%;
+    @include border-shadow;
+    h4 {color: $color-2; font-size: 1.75em; padding-top: .15em}
+    p {padding: .5em 0; max-width: 85%;}
+    span {font-weight: 700; color: $cosmos-comp;}
+  }
+  figure {
+    float:left;
+    display:flex;
+    flex-direction: column;
+    margin:0 auto;
+    img {width: 100%; @include border-shadow;}
+    figcaption {
+      font-size:.8em;
+      padding: .5em 0;
+      margin: 0 auto;
+      color: $color-2;
+      text-align: center;
+    }
+    &.full-width {max-width: 90%;}
+  }
+  .partial {
+    display:block;
+    margin: 0 auto;
+    width: 95%;
+    figure {max-width: 100%;}
+    p {padding: 0 .25em .5em .25em;}
+  }
+  .cog-tests {
+    display:none;
+    min-width: 100%;
+    justify-content: center;
+    h4 {
+      max-width: 80%;
+      color: $color-2;
+      padding-bottom: .5em;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    div {margin: 0 .5em;}
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .research {
+    img.half-width {width: 50%; @include border-shadow;}
+    .partial {
+      figure {max-width: 50%; margin: 0 1em 0 0;}
+    }
+    .cog-tests { display:flex;}
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .research {
+    img.half-width {width: 50%; @include border-shadow;}
+    p {
+      font-size: 1.15em;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+    figure.full-width {max-width: 80%;}
+    .partial {
+      width: 90%;
+      figure {max-width: 40%; margin: 0 1em 0 0;}
+      p {padding: 0 .25em .5em .25em;}
+    }
+  }
+}

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app>
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Jeremiah Nyman | UX Research and Designer</title>
+	<title>Research Portfolio | Jeremiah Nyman</title>
 
 	<meta name="author" content="Jera"></meta>
 	<meta name="description" content="This is the portfolio website for Jeremiah Nyman, a UX Research and Designer located near Seattle, WA."></meta>
@@ -20,23 +20,15 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
 </head>
 <body>
 
+
+
 <div class="side-nav">
-  <div class="title">Articles</div>
-  <ul>
-		<li class="category"><a href="/jnv6/design">UX Design</a></li>
-    <li><a href="/jnv6/design/websites">Full Websites</a></li>
-    <li><a href="/jnv6/design/digital-content">Content Strategy</a></li>
-    <li><a href="/jnv6/design/design-insights">Design Insights</a></li>
-		<li class="category"><a href="/jnv6/research">UX Research</a></li>
-    <li><a href="/jnv6/research/video-games-and-attention">Video Games and Attention</a></li>
-    <li><a href="/jnv6/research/esports-analytics">Esports Analytics</a></li>
-		<li><a href="/jnv6/research/wsu-social-media">Wichita State Social Media</a></li>
-		<li class="category"><a href="/jnv6/resume">Resume</a></li>
-  </ul>
+	<div ng-include src="'/jnv6/assets/side-nav.url'"></div>
 	<div class="close-container closing"><a></a></div>
 </div>
 
@@ -49,7 +41,7 @@
   		</ul>
   		<ul class="nav-group">
   			<li class="buffer"></li>
-  			<li><a href="/jnv6/designs">Designs</a></li>
+  			<li><a href="/jnv6/design">Designs</a></li>
   			<li><a href="/jnv6/research">Research</a></li>
   			<li><a href="/resume">Resume</a></li>
       </ul>
@@ -57,31 +49,32 @@
     <div class="main-wrapper" id="websites">
   		<div class="main-container">
         <header>
-          <img src="/img/content/vgatt/UFOVmed.jpg">
-          <h1>This is the Article Title</h1>
-          <h2>And this is a subtitle</h2>
+          <h1>Research and Analytics Portfolio</h1>
         </header>
     	</div>
-      <div class="content-container">
-        <p>This is a content container 1</p>
-        <p>This is a content container</p>
-        <p>This is a content container</p>
-        <p>This is a content container</p>
-      </div>
-      <div class="content-container">
-        <div class="ux-box">
-          <p>UX Problem:</p>
-          <p>This is the UX Problem</p>
-        </div>
-      </div>
-      <div class="content-container paragraph">
-        <p>This is a content container 2</p>
-        <p>This is a content container</p>
-        <p>This is a content container</p>
-        <p>This is a content container</p>
-        <p>This is a content container</p>
-      </div>
-    </div>
+      <div class="content-container wide-container content-single">
+				<div>
+					<a href="/jnv6/design/websites">
+						<img src="/jnv6/img/content/vgatt/ufovmed.jpg" alt=""/>
+						<h3>Video Games and Attention</h3>
+					</a>
+				</div>
+				<div>
+					<a href="/jnv6/design/content-strategy">
+						<img src="/jnv6/img/content/esports/esportsanalytics.jpg" alt=""/>
+						<h3>E-Sports Analytics</h3>
+					</a>
+				</div>
+				<div>
+					<a href="/jnv6/design/design-insights">
+						<img src="/jnv6/img/content/wsu/wsuwide.jpg" alt=""/>
+						<h3>Wichita State University: Enhancing Social Media</h3>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
   <footer>
 		<ul class="footer">
 			<li><a href="/resume">Resume</a></li>
@@ -96,9 +89,10 @@
 </main>
 
 <!-- OFFLINE FALLBACKS>
-<script src="/fallback/jquery-3.0.0.min.js"></script>
-<script src="/fallback/jquery-ui.min.js"></script> -->
+<script src="/jnv6/fallback/jquery-3.0.0.min.js"></script>
+<script src="/jnv6/fallback/jquery-ui.min.js"></script> -->
 
 <script type="text/javascript" src="/jnv6/js/app.js"></script>
 
 </body>
+</html>

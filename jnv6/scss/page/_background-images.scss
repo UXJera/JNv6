@@ -24,6 +24,10 @@
   background: $color-1;
 }
 
+.main-wrapper#research {
+  background: $color-5;
+}
+
 @media screen and (min-width: 720px) {
   #landing {
     background:url("/jnv6/img/bg/stars-bg-hd.jpg");

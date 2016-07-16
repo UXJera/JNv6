@@ -1,8 +1,14 @@
 // HOME PAGE
 
-.main-wrapper h2 {
-  letter-spacing: .03em;
-  text-align: center;
+header h1 {padding-bottom: .25em;}
+
+.main-wrapper {
+  h2, h3 {
+    letter-spacing: .03em;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .main-wrapper:nth-of-type(odd){

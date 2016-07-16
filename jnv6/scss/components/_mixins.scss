@@ -14,7 +14,7 @@
 @mixin border-shadow{border-radius: 10px; box-shadow: 5px 5px 15px #111;}
 
 @mixin fonts-header {font-family: teko,'century gothic', arial, sans-serif;}
-@mixin fonts-content{font-family: Karla, lato, arial, sans-serif;}
+@mixin fonts-content{font-family: 'roboto condensed', lato, arial, sans-serif;} //Karla,
 
 @mixin flex-center{
   display:flex;

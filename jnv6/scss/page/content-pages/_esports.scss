@@ -1,0 +1,31 @@
+// TURN YOUTUBE VIDEO INTO RESPONSIVE BLOCK //
+
+.content-container.youtube {
+  display:block;
+  max-width: 90%;
+}
+
+.embed-container {
+  margin:0 auto;
+	height: 0;
+	max-width: 100%;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+
+.content-container.youtube {
+  display:block;
+  max-width: 50%;
+}
+}
