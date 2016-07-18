@@ -88,9 +88,7 @@
   }
 }
 
-
 footer {@include fonts-header; font-size: 1.2em;}
-
 
 @media screen and (min-width: 775px) {
   header {
@@ -98,7 +96,6 @@ footer {@include fonts-header; font-size: 1.2em;}
   }
   .content-container {
     max-width: 75%;
-    //p {max-width: 80%;}
   }
   .wide-container {max-width: 85%;}
   .content-container.row {flex-direction: row; align-items:flex-start;}
@@ -123,10 +120,10 @@ footer {@include fonts-header; font-size: 1.2em;}
 
 @media screen and (min-width: 1200px) {
   .content-container {max-width: 65%;}
-  .wide-container {max-width: 80%;}
+  .wide-container {max-width: 75%;}
 }
 
 @media screen and (min-width: 1400px) {
   .content-container {max-width: 55%;}
-  .wide-container {max-width: 70%;}
+  .wide-container {max-width: 65%;}
 }

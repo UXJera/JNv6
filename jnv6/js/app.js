@@ -2,9 +2,12 @@ $(document).ready(function() {
 
   // SIDEBAR NAV
   $('.sub-nav').on('click', function() {
+    $('.side-nav').toggleClass('isClosed');
     $('.page-wrapper').toggleClass('isOpen');
+
   });
   $('.closing').on('click', function() {
+    $('.side-nav').toggleClass('isClosed');
     $('.page-wrapper').toggleClass('isOpen');
   });
 

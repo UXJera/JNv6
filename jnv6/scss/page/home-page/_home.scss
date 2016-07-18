@@ -1,5 +1,5 @@
 body {
-  display:flex;
+  //display:flex;
   flex-direction:column;
 }
 
@@ -17,7 +17,7 @@ body {
   width:95%;
   padding-bottom: .5em;
   margin:0 auto;
-  &.column {flex-direction: column;}
+  //&.column {flex-direction: column;}
   @include flex-center;
   @include fonts-content;
 }

@@ -2,7 +2,11 @@
   display:flex;
   justify-content:center;
   max-width: 65%;
-  max-height: 65%;
+  img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .container-triple{
@@ -18,22 +22,12 @@
   i {color:$color-1; font-size: 12em;}
 }
 
-.headshot {
-  width:75%;
-  height:75%;
+.img-triple.headshot {
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
-.img-triple.headshot {border-radius: 50%; min-width:50%; min-height: 50%; max-width: 200px; min-width: 200px;}
-
 @media screen and (min-width: 750px) {
-  .img-container-single {
-    max-width: 33%;
-    max-height: 33%;
-  }
-  .headshot {
-    width:50%;
-    height:50%;
-  }
   .container-triple i {color:$color-1; font-size: 8em;}
 }

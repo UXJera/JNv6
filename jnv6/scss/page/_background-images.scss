@@ -1,11 +1,11 @@
 #landing {
-  background: url("/jnv6/img/bg/stars-bg.jpg");
+  background: url("/jnv6/img/bg/stars-bg-mobile.jpg");
   background-position:center bottom;
   @include fullbg;
 }
 
 #contact {
-  background: url("/jnv6/img/bg/desk-bg.jpg");
+  background: url("/jnv6/img/bg/desk-bg-mobile.jpg");
   background-position:center bottom;
   @include fullbg;
   min-height: 70vh;
@@ -14,7 +14,7 @@
 // BACKGROUND IMAGE FOR NAV ON CONTENT PAGES
 
 .page-wrapper.content {
-  background:url('/jnv6/img/bg/stars-bg.jpg');
+  background:url('/jnv6/img/bg/stars-bg-mobile.jpg');
   @include fullbg;
 }
 
@@ -28,11 +28,19 @@
   background: $color-5;
 }
 
+
+
 @media screen and (min-width: 720px) {
+  .page-wrapper.content {
+    background:url('/jnv6/img/bg/stars-bg-hd.jpg');
+    @include fullbg;
+  }
+
   #landing {
     background:url("/jnv6/img/bg/stars-bg-hd.jpg");
     background-position:center center;
   }
+
   #contact {
     background:url("/jnv6/img/bg/desk-bg-hd.jpg");
     background-position:center center;
