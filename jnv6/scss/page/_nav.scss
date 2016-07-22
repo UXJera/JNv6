@@ -113,7 +113,10 @@ nav {
       }
   }
   .logo {padding-left: 1em;}
-  .nav-group {flex: 5}
+  .nav-group {
+    flex: 5;
+    padding-right: 1em;
+  }
 }
 
 @media screen and (min-width: 775px) {

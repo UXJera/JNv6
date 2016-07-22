@@ -12,7 +12,10 @@ footer {width: 100%;}
   flex-wrap: wrap;
   background:transparentize($cosmos, .15);
   box-shadow: -5px 0px 15px black;
-  li {padding:.25em 1em; flex:1;}
+  li {
+    padding:.25em 1em;
+    flex:1 0 auto;
+    }
   a {
     padding:.5em;
     color: $color-1;
