@@ -21,8 +21,14 @@ footer {width: 100%;}
     color: $color-1;
     text-shadow: -2px 2px 2px #999;
     @include animation-fast;
-    &:hover {transform: translate(2px, -2px);}
   }
   i {font-size: 1.2em;}
   p {color: $color-1;}
+}
+
+@media screen and (min-width: 700px) {
+  .footer a:hover {
+      color: $color-2;
+      text-shadow: -2px 2px 2px darken($color-2, 15%);
+  }
 }

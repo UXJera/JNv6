@@ -1,0 +1,34 @@
+.contact-block {
+  display:flex;
+  background: transparentize($color-1, .3);
+  min-height: 30vh;
+  @include border-shadow;
+  ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+    a {
+      color:$cosmos;
+      font-size: 1.3em;
+      display: flex;
+      align-items: center;
+      @include animation-fast;
+      &:hover {
+        color: $color-2;
+      }
+    }
+    i {
+      font-size: 2.5em;
+      padding-right: .5em;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact-block {
+    ul {
+      padding: 1em 3em;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" ng-app>
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -20,25 +20,15 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
 </head>
 <body>
 
-<div class="side-nav isClosed">
-  <div class="title">Articles</div>
-  <ul>
-		<li class="category"><a href="/jnv6/design">UX Design</a></li>
-    <li><a href="/jnv6/design/websites">Full Websites</a></li>
-    <li><a href="/jnv6/design/digital-content">Content Strategy</a></li>
-    <li><a href="/jnv6/design/design-insights">Design Insights</a></li>
-		<li class="category"><a href="/jnv6/research">UX Research</a></li>
-    <li><a href="/jnv6/research/video-games-and-attention">Video Games and Attention</a></li>
-    <li><a href="/jnv6/research/esports-analytics">Esports Analytics</a></li>
-		<li><a href="/jnv6/research/wsu-social-media">Wichita State Social Media</a></li>
-		<li class="category"><a href="/jnv6/resume">Resume</a></li>
-  </ul>
-	<div class="close-container closing"><a></a></div>
-</div>
+	<div class="side-nav isClosed">
+		<div ng-include src="'/jnv6/assets/side-nav.url'"></div>
+		<div class="close-container closing"><a></a></div>
+	</div>
 
 <main>
   <div class="page-wrapper content">
@@ -110,16 +100,7 @@
 				</div>
 		</div>
 	</div>
-  <footer>
-		<ul class="footer">
-			<li><a href="/resume">Resume</a></li>
-			<li><a href="mailto:jeremiahnyman@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/jeremiahnyman" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-			<li><a href="https://twitter.com/UX_Jera" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-			<li><a href="https://github.com/UXJera" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-			<li><p>Designed by Jera in 2016</p></li>
-		</ul>
-	</footer>
+	<div ng-include src="'/jnv6/assets/footer.url'"></div>
 </div>
 </main>
 
