@@ -1,12 +1,11 @@
-<nav>
+
   <ul class="logo">
-		<li><a class="sub-nav"></a></li>
-		<li><a href="/">Jeremiah Nyman</a></li>
-	</ul>
-	<ul class="nav-group">
-		<li class="buffer"></li>
-		<li><a href="/jnv6/designs">Designs</a></li>
-		<li><a href="/jnv6/research">Research</a></li>
-		<li><a href="/resume">Resume</a></li>
+    <li><a class="sub-nav"></a></li>
+    <li><a href="/">Jeremiah Nyman</a></li>
   </ul>
-</nav>
+  <ul class="nav-group">
+    <li class="buffer"></li>
+    <li><a href="/jnv6/design/">Designs</a></li>
+    <li><a href="/jnv6/research/">Research</a></li>
+    <li><a href="/resume/">Resume</a></li>
+  </ul>
