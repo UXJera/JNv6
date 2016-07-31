@@ -1,3 +1,8 @@
 DirectoryIndex index.html index.php parking-page.html
 
 Options -Indexes
+
+# 1 Week Cache for static objects
+<filesMatch ".(jpg|png)$">
+Header set Cache-Control "max-age=648000, public"
+</filesMatch>
