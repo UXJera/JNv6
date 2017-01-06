@@ -6,19 +6,42 @@
   align-items: center;
   text-align:center;
   & > * {padding: .5em 0;}
-  h1, h3 {
-    padding: .5em;
+  .landing-text{
     display:flex;
-    align-items:center;
+    //align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex:20;
+  }
+  h1, h2, h3 {
+    padding: .5em;
+    //display:flex;
     color:$color-1;
     @include fonts-content;
     letter-spacing: .025em;
     text-shadow: 2px 2px 2px black;
-    flex:2;
+    flex:1;
   }
-  h1 {flex:6; align-items:flex-end;}
+  h1 {
+    display:flex;
+    flex:5;
+    align-items:flex-end;
+    justify-content: center;
+  }
   i {color:$color-1; @include fast-animation;}
   i:hover {color:$color-3;}
+  h2 {font-size: 1.75em;}
+}
+
+.landing-next {
+  background:transparentize($cosmos, .15);
+  padding: .5em 1em;
+  @include border-shadow;
+  @include animation-fast;
+  &:hover {
+    background: transparentize($color-3, .25);
+    @include animation-fast;
+  }
 }
 
 .next-page {
