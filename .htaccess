@@ -1,5 +1,9 @@
 DirectoryIndex index.html index.php parking-page.html
 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
 Options -Indexes
 
 # 1 Week Cache for static objects

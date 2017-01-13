@@ -1,12 +1,12 @@
 <div class="title">Projects</div>
 <ul>
-	<li class="category"><a href="/jnv6/design/">UX Design</a></li>
-  <li><a href="/jnv6/design/websites/">Full Websites</a></li>
-  <li><a href="/jnv6/design/content-strategy/">Content Strategy</a></li>
-  <li><a href="/jnv6/design/design-insights/">Design Insights</a></li>
-	<li class="category"><a href="/jnv6/research/">UX Research</a></li>
-  <li><a href="/jnv6/research/video-games-and-attention/">Video Games and Attention</a></li>
-  <li><a href="/jnv6/research/esports-analytics/">Esports Analytics</a></li>
-	<li><a href="/jnv6/research/wsu-social-media/">Wichita State Social Media</a></li>
+	<li class="category"><a href="/jnv6/design/index">UX Design</a></li>
+  <li><a href="/jnv6/design/websites">Full Websites</a></li>
+  <li><a href="/jnv6/design/content-strategy">Content Strategy</a></li>
+  <li><a href="/jnv6/design/design-insights">Design Insights</a></li>
+	<li class="category"><a href="/jnv6/research/index">UX Research</a></li>
+  <li><a href="/jnv6/research/video-games-and-attention">Video Games and Attention</a></li>
+  <li><a href="/jnv6/research/esports-analytics">Esports Analytics</a></li>
+	<li><a href="/jnv6/research/wsu-social-media">Wichita State Social Media</a></li>
 	<li class="category"><a href="/resume/resume.pdf">Resume</a></li>
 </ul>
