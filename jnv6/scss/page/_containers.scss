@@ -1,0 +1,32 @@
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  width:95%;
+  padding-bottom: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.column {flex-direction: column;}
+  @include fonts-content;
+
+}
+
+.element-container {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    max-width: 90%;
+    @include border-shadow;
+  }
+}
+
+.container-dark {
+  background: $color-5;
+}

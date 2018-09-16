@@ -1,0 +1,34 @@
+button.landing-button {
+  border: 0;
+  background:transparentize($cosmos, .15);
+  padding: .5em 1em;
+  @include border-shadow;
+  @include animation-fast;
+  &:hover {
+    background: transparentize($color-3, .25);
+    @include animation-fast;
+  }
+}
+
+button.content-button, button.content-button-reverse {
+  @include fast-animation;
+  width: 75%;
+  padding: .5em;
+  text-align: center;
+  margin-top: .5em;
+  @include border-shadow;
+  border: 0;
+  cursor: pointer;
+}
+
+button.content-button {
+  color: $color-1;
+  background:$color-5;
+  &:hover{background: $color-2; color: $color-4;}
+}
+
+button.content-button-reverse {
+  color: $color-5;
+  background:$color-1;
+  &:hover{background: $color-4; color: $color-2;}
+}

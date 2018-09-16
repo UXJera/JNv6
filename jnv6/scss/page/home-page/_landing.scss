@@ -1,21 +1,12 @@
 .home header {
-  min-height: 90vh;
+  min-height: 75vh;
   display:flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
   text-align:center;
-  & > * {padding: .5em 0;}
-  .landing-text{
-    display:flex;
-    //align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex:20;
-  }
   h1, h2, h3 {
     padding: .5em;
-    //display:flex;
     color:$color-1;
     @include fonts-content;
     letter-spacing: .025em;
@@ -45,7 +36,6 @@
 }
 
 .next-page {
-  flex:1;
   padding: 0;
   a {font-size: 5em; @include fast-animation;}
   a{color: $color-2;}
@@ -65,9 +55,9 @@
 
 
 @media screen and (min-width: 720px) {
-  .home header {min-height: 80vh;}
+  .home header {min-height: 75vh;}
 }
 
 @media screen and (min-width: 900px) {
-  .home header {min-height: 90vh;}
+  .home header {min-height: 80vh;}
 }
