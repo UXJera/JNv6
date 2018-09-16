@@ -1,0 +1,12 @@
+.content-container {
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h3, h5 {
+    @include fonts-header;
+    color: $grey-5
+  }
+}
