@@ -36,7 +36,24 @@
     font-size: .6em;
     padding: .5em 1em 1em 1em;
   }
+  .element-text {
+    background: $color-1;
+    width: 100%;
+    color: $color-5;
+    align-items: flex-start;
+    ul {
+      padding-left: 2em;
+    }
+    h6 {
+      padding: 1em 0;
+      text-align: center;
+      width: 100%;
+    }
+    padding-bottom: 1em;
+  }
 }
+
+
 
 .container-dark {
   background: $color-5;
