@@ -18,7 +18,7 @@
 .element-container {
   background: $color-4;
   @include border-shadow;
-  max-width: 75%;
+  max-width: 95%;
   color: white;
   h5 {
     color: white;
@@ -40,4 +40,10 @@
 
 .container-dark {
   background: $color-5;
+}
+
+@media screen and (min-width: 775px) {
+  .element-container {
+    max-width: 75%;
+  }
 }
