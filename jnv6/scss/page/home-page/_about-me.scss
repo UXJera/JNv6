@@ -63,6 +63,12 @@
   span {font-weight: 700;}
 }
 
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .resume ul {list-style-type: disc; padding-left: .5em;}
 .resume ul li {padding: .35em 0; line-height: 1.25em;}
 

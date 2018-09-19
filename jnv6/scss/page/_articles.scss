@@ -1,0 +1,11 @@
+.article-link {
+  a{
+    @include fonts-header;
+    text-decoration: underline;
+    @include animation-fast;
+    color: $color-3;
+    &:hover {
+      color: $color-2;
+    }
+  }
+}
