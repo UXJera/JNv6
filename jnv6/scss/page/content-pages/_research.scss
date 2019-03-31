@@ -4,17 +4,20 @@
   background:$color-5;
   @include box-shadow-img;
   .content-container {
-    flex-direction: row;flex-wrap:wrap;
+    flex-direction: row;
+    flex-wrap:wrap;
     a {color: $color-2; @include animation-fast;
-      &:hover {color: $cosmos-comp;}
+      &:hover {color: $cosmos-comp;
+        text-decoration: underline
+      }
     }
   }
   p {
     color: $color-1;
-    font-size: 1.1em;
-    line-height: 1.3em;
-    padding-left: 1em;
-    padding-right: 1em;
+    // font-size: 1.1em;
+    // line-height: 1.3em;
+    // padding-left: 1em;
+    // padding-right: 1em;
   }
   img.float-left {float:left; clear:both; margin-right: .5em;}
   img.float-right {float:right; clear:both;margin-left: .5em;}
@@ -27,9 +30,9 @@
     background: $cosmos;
     width: 80%;
     @include border-shadow;
-    h4 {color: $color-2; font-size: 1.75em; padding-top: .15em}
+    h4 {color: $color-1; font-size: 1.75em; padding-top: .15em}
     p {padding: .5em 0; max-width: 85%;}
-    span {font-weight: 700; color: $cosmos-comp;}
+    span {font-weight: 700; color: $color-2;}
   }
   figure {
     float:left;

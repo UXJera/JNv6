@@ -9,3 +9,11 @@
     }
   }
 }
+
+a.article-link-red {
+  color: $color-2;
+  @include animation-fast;
+  &:hover {color: $cosmos-comp;
+    text-decoration: underline
+  }
+}
