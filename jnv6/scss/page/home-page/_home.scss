@@ -15,7 +15,7 @@ body {
 
 .main-container {
   width:95%;
-  padding-bottom: .5em;
+  padding-bottom: 2em;
   margin:0 auto;
   //&.column {flex-direction: column;}
   @include flex-center;

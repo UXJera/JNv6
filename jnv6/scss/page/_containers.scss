@@ -16,6 +16,7 @@
 }
 
 .element-container {
+  margin: 1em 0;
   background: $color-4;
   @include border-shadow;
   max-width: 95%;
@@ -34,7 +35,7 @@
   }
   figcaption {
     font-size: .6em;
-    padding: .5em 1em 1em 1em;
+    padding: 1.5em;
   }
   .element-text {
     background: $color-1;

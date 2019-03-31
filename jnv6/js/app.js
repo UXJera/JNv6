@@ -20,10 +20,9 @@ $(document).ready(function() {
 
   // JQUERY TABS
   $("#about-me-tabs").tabs({
+    active: 1,
     collapsible: true,
-    active:false
   });
-
 });
 
 //# sourceMappingURL=app.js.map

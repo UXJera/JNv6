@@ -7,7 +7,7 @@
   background-size: cover;
   min-height: 80vh;
 }
-@mixin box-shadow {box-shadow: 5px 5px 5px #111;}
+@mixin box-shadow {box-shadow: 0px 0px 15px #111;}
 @mixin box-shadow-img {box-shadow: 0px 0px 15px #111;}
 @mixin fast-animation {transition: all .5s;}
 @mixin animation-fast {transition: all .5s;}
@@ -15,10 +15,14 @@
 @mixin animation-slow {transition: all 1.5s;}
 @mixin border {border: 2px solid #222; border-radius: 10px;}
 @mixin border-bottom {border-bottom: 1px solid #222;}
-@mixin border-shadow{border-radius: 10px; box-shadow: 5px 5px 15px #111;}
+@mixin border-shadow{border-radius: 5px; box-shadow: 0px 0px 15px #111;}
+@mixin border-radius{border-radius: 5px;}
 
-@mixin fonts-header {font-family: teko,'century gothic', arial, sans-serif;}
-@mixin fonts-content{font-family: 'roboto condensed', lato, arial, sans-serif;} //Karla,
+@mixin fonts-header {font-family: 'roboto condensed','century gothic', arial, sans-serif;}
+@mixin fonts-content{font-family: lato, arial, sans-serif;} //Karla,
+
+.text-shadow {text-shadow: 2px 2px 2px #000;}
+@mixin button-radius {border-radius: 5px;}
 
 @mixin flex-center{
   display:flex;

@@ -16,7 +16,7 @@ main {min-width: 100vw; overflow-x: hidden;}
   width: 300px;
   max-height: 100vh;
   .title {
-    @include fonts-header;
+    font-family: teko;
     font-size: 1.75em;
     line-height: 2.85em;
     text-align: center;
@@ -41,7 +41,7 @@ main {min-width: 100vw; overflow-x: hidden;}
       text-align:center;
       background: #252525;
       a {
-        @include fonts-header;
+        font-family: teko;
         font-size: 1.75em;
         line-height: .5em;
         padding: 15px 0;
@@ -88,7 +88,7 @@ nav {
   background:transparentize($cosmos, .15);
   box-shadow: -2px 5px 5px black;
   ul {
-    @include fonts-header;
+    font-family: teko;
     display:flex;
     flex-direction:row;
     justify-content: center;

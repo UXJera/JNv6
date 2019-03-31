@@ -1,0 +1,38 @@
+.article-card {
+  display: flex;
+  // background:red;
+  width: 100%;
+  @include border-shadow;
+  @include border-radius;
+  img {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    margin:0 auto;
+    object-fit: cover;
+  }
+  h4.article-card-lower{
+    background: $color-4;
+    color: $color-1;
+    display: flex;
+    flex: 1 0 auto;
+    padding: 1em 0;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    @include animation-fast;
+    border-radius: 0 0 4px 4px;
+    &:hover {
+      @include animation-fast;
+      background: $color-3;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .article-card {
+    img {
+      // max-width: 30vw;
+      max-height: 50vh;
+    }
+  }
+}
