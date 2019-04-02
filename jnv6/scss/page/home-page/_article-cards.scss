@@ -15,7 +15,7 @@
     color: $color-1;
     display: flex;
     flex: 1 0 auto;
-    padding: 1em 0;
+    padding: 1rem 0;
     justify-content: center;
     width: 100%;
     text-align: center;
@@ -32,7 +32,10 @@
   .article-card {
     img {
       // max-width: 30vw;
-      max-height: 50vh;
+      height: 45vh;
+    }
+    &.gs-card img{
+      object-position: right;
     }
   }
 }

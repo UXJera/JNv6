@@ -6,13 +6,13 @@
   align-items: center;
   text-align:center;
   h1, h2, h3 {
-    padding: .5em;
+    padding: .5rem;
     color:$color-1;
-    letter-spacing: .025em;
+    letter-spacing: .025rem;
     text-shadow: 2px 2px 2px black;
     flex:1;
   }
-  h1 { 
+  h1 {
     display:flex;
     flex:5;
     align-items:flex-end;
@@ -21,12 +21,12 @@
 
   i {color:$color-1; @include fast-animation;}
   i:hover {color:$color-3;}
-  h2 {font-size: 1.75em;}
+  h2 {font-size: 1.75rem;}
 }
 
 .landing-next {
   background:transparentize($cosmos, .15);
-  padding: .5em 1em;
+  padding: .5rem 1rem;
   @include border-shadow;
   @include animation-fast;
   &:hover {
@@ -37,7 +37,7 @@
 
 .next-page {
   padding: 0;
-  a {font-size: 5em; @include fast-animation;}
+  a {font-size: 5rem; @include fast-animation;}
   a{color: $color-2;}
   a:hover {color: $color-4;}
 }

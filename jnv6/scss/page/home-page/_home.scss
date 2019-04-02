@@ -2,8 +2,11 @@ body {
   //display:flex;
   flex-direction:column;
 }
-
+#about-me.main-wrapper {
+  //padding-top: 1rem;
+}
 .main-wrapper {
+  padding-top: 1rem;
   width: 100%;
   min-height: 50vh;
   @include flex-center;
@@ -15,14 +18,14 @@ body {
 
 .main-container {
   width:95%;
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
   margin:0 auto;
   //&.column {flex-direction: column;}
   @include flex-center;
   @include fonts-content;
 }
 
-#about-me p {padding-bottom: .75em;}
+#about-me p {padding-bottom: .75rem;}
 
 @media screen and (min-width: 775px) {
   .main-container {

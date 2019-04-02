@@ -4,12 +4,13 @@
 }
 
 .content-wrapper {
+  padding: 2rem 0 1rem 0;
   width: 100%;
   @include flex-center;
   @include fonts-header;
   &:nth-of-type(even) {
     background: $color-5; color:$color-1;
-    h3 {
+    h2, h3 {
       color: $grey-3;
     }
   }
@@ -34,8 +35,8 @@
     flex-direction: column;
     align-items: center;
     background: $cosmos;
-    padding: .5em;
-    margin: .5em 0;
+    padding: .5rem;
+    margin: .5rem 0;
     @include border-shadow;
     h3 {
       @include fonts-header;
@@ -43,7 +44,7 @@
       text-decoration: none;
       color: $color-2;
       @include animation-fast;
-      padding: .5em 0;
+      padding: .5rem 0;
       &:hover {color:$cosmos-comp;}
     }
     a {
@@ -57,7 +58,7 @@
     }
     p {
       color: $grey-1;
-      padding: .5em 0;
+      padding: .5rem 0;
     }
   }
 }
@@ -68,8 +69,8 @@
   div {
 
     h3 {
-      font-size: 2.5em;
-      padding: .75em 0 0 0;
+      font-size: 2.5rem;
+      padding: .75rem 0 0 0;
     }
   }
 }
@@ -82,23 +83,30 @@
     align-items: center;
     width: 100%;
     h3 {
-      font-size: 2em;
-      padding: .5em 0 0 0;
+      font-size: 2rem;
+      padding: .5rem 0 0 0;
     }
     p {
-      padding: 0 2.5em;
+      padding: 0 2.5rem;
     }
   }
 }
 
-footer {@include fonts-header; font-size: 1.2em;}
+// RESEARCH CONTAINER BREAK
+
+.content-break {
+  flex-direction: column;
+}
+
+footer {@include fonts-header; font-size: 1.2rem;}
 
 @media screen and (min-width: 775px) {
   header {
-    h1 {font-size: 3em;}
+    h1 {font-size: 3rem;}
   }
   .content-container {
     max-width: 75%;
+    justify-content: center;
   }
   .wide-container {max-width: 85%;}
   .content-container.row {flex-direction: row; align-items:flex-start;}
@@ -118,7 +126,7 @@ footer {@include fonts-header; font-size: 1.2em;}
       a img {max-width: 100%;}
       p {
         max-width: 100%;
-        padding: 1em;
+        padding: 1rem;
       }
     }
   }

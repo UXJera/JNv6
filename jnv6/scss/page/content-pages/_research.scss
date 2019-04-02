@@ -14,48 +14,64 @@
   }
   p {
     color: $color-1;
-    // font-size: 1.1em;
-    // line-height: 1.3em;
-    // padding-left: 1em;
-    // padding-right: 1em;
+    // font-size: 1.1rem;
+    // line-height: 1.3rem;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
   }
-  img.float-left {float:left; clear:both; margin-right: .5em;}
-  img.float-right {float:right; clear:both;margin-left: .5em;}
+  img.float-left {float:left; clear:both; margin-right: .5rem;}
+  img.float-right {float:right; clear:both;margin-left: .5rem;}
   .ux-box {
-    margin: 0 auto;
+    margin: 1rem auto;
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: .25em;
+    padding: 1rem .5rem;
     background: $cosmos;
     width: 80%;
     @include border-shadow;
-    h4 {color: $color-1; font-size: 1.75em; padding-top: .15em}
-    p {padding: .5em 0; max-width: 85%;}
-    span {font-weight: 700; color: $color-2;}
+    h4 {
+      width: 100%;
+      text-align: center;
+      color: $color-1;
+      font-size: 1.75rem;
+      padding-bottom: .5rem;
+    }
+    p {
+      padding: .5rem 0;
+      max-width: 85%;
+    }
+    span {
+      font-weight: 700;
+      color: $color-2;
+    }
   }
   figure {
+    background: white;
+    @include border-radius;
     float:left;
     display:flex;
     flex-direction: column;
     margin:0 auto;
-    img {width: 100%; @include border-shadow;}
+    padding: .5rem;
+    padding-bottom: 0;
+    img {width: 100%;}
     figcaption {
-      font-size:.8em;
-      padding: .5em 0;
+      font-size:.8rem;
+      padding: .5rem 0;
       margin: 0 auto;
       color: $color-2;
       text-align: center;
     }
-    &.full-width {max-width: 90%;}
+    // &.full-width {max-width: 90%;}
   }
-  .partial {
-    display:block;
-    margin: 0 auto;
-    width: 95%;
-    figure {max-width: 100%;}
-    p {padding: 0 .25em .5em .25em;}
-  }
+  // .partial {
+  //   display:block;
+  //   margin: 0 auto;
+  //   width: 95%;
+  //   figure {max-width: 100%;}
+  //   p {padding: 0 .25rem .5rem .25rem;}
+  // }
   .cog-tests {
     display:none;
     min-width: 100%;
@@ -63,20 +79,20 @@
     h4 {
       max-width: 80%;
       color: $color-2;
-      padding-bottom: .5em;
-      font-size: 1.5em;
+      padding-bottom: .5rem;
+      font-size: 1.5rem;
       text-align: center;
     }
-    div {margin: 0 .5em;}
+    div {margin: 0 .5rem;}
   }
 }
 
 @media screen and (min-width: 750px) {
   .research {
-    img.half-width {width: 50%; @include border-shadow;}
-    .partial {
-      figure {max-width: 50%; margin: 0 1em 0 0;}
-    }
+    // img.half-width {width: 50%; @include border-shadow;}
+    // .partial {
+    //   figure {max-width: 50%; margin: 0 1rem 0 0;}
+    // }
     .cog-tests { display:flex;}
   }
 }
@@ -85,15 +101,15 @@
   .research {
     img.half-width {width: 50%; @include border-shadow;}
     p {
-      font-size: 1.15em;
-      padding-left: 2em;
-      padding-right: 2em;
+      //font-size: 1.15rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
-    figure.full-width {max-width: 80%;}
-    .partial {
-      width: 90%;
-      figure {max-width: 40%; margin: 0 1em 0 0;}
-      p {padding: 0 .25em .5em .25em;}
-    }
+    // figure.full-width {max-width: 80%;}
+    // .partial {
+    //   width: 90%;
+    //   figure {max-width: 40%; margin: 0 1rem 0 0;}
+    //   p {padding: 0 .25rem .5rem .25rem;}
+    // }
   }
 }
