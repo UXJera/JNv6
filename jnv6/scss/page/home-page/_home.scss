@@ -13,7 +13,7 @@ body {
   @include fonts-header;
   &:nth-of-type(even) {background: $color-5; color:$color-1;}
   &:nth-of-type(odd) {background: $color-1; color:$color-5;}
-  box-shadow: inset 0px 0px 15px black;
+  //box-shadow: inset 0px 0px 15px black;
 }
 
 .main-container {

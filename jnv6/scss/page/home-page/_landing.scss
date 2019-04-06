@@ -1,5 +1,5 @@
 .home header {
-  min-height: 75vh;
+  min-height: 40vh;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -43,9 +43,9 @@
 }
 
 @media screen and (min-width: 720px) {
-  .home header {min-height: 75vh;}
+  //.home header {min-height: 75vh;}
 }
 
 @media screen and (min-width: 900px) {
-  .home header {min-height: 80vh;}
+  //.home header {min-height: 80vh;}
 }

@@ -1,7 +1,12 @@
 .img-container-single {
-  //display:flex;
-  //justify-content:center;
-  //max-width: 65%;
+  display:flex;
+  //justify-content: center;
+  flex-direction: row;
+  max-width: 80%;
+  h2 {
+    align-self: center;
+    min-width: 20vw;
+  }
   img {
     border-radius: 50%;
     //max-width: 250px;

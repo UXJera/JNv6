@@ -2,11 +2,11 @@
   background: url("/jnv6/img/bg/stars-bg-mobile.jpg");
   background-position:center bottom;
   background-size: cover;
-  min-height: 75vh;
+  min-height: 45vh;
 }
 
 #contact {
-  background: url("/jnv6/img/bg/desk-bg-mobile.jpg");
+  background-image: url("/jnv6/img/bg/desk-bg-mobile.jpg");
   background-position:center bottom;
   min-height: 70vh;
 }
@@ -34,14 +34,17 @@
   }
 
   #landing {
-    background:url("/jnv6/img/bg/stars-bg-hd.jpg");
+    @include bg-landing-stars;
+    //background:url("/jnv6/img/bg/stars-bg-hd.jpg");
     background-position:center center;
-    @include fullbg;
+    max-height: 60vh;
   }
 
   #contact {
-    background:url("/jnv6/img/bg/desk-bg-hd.jpg");
+    background-image: url("/jnv6/img/bg/desk-bg-hd.jpg");
+    // @include bg-gradient-white-reverse;
     background-position:center center;
+    
     @include fullbg;
     min-height: 70vh;
   }

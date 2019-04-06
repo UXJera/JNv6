@@ -1,4 +1,6 @@
-DirectoryIndex index.html index.php parking-page.html
+DirectoryIndex index.html
+
+ErrorDocument 404 /index.html
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f

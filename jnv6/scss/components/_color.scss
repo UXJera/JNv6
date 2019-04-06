@@ -33,3 +33,39 @@ $grey-4: #4c5c68;
 $grey-5: #46494c;
 
 $github: #913399;
+
+@mixin bg-gradient-black {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a1a1a+0,1a1a1a+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(26,26,26,0) 0%, rgba(26,26,26,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001a1a1a', endColorstr='#1a1a1a',GradientType=0 ); /* IE6-9 */}
+
+@mixin bg-gradient-black-reverse {background: -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(6,6,6,0) 23%, rgba(26,26,26,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(6,6,6,0) 23%,rgba(26,26,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(6,6,6,0) 23%,rgba(26,26,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1a1a1a',GradientType=0 ); /* IE6-9 */}
+
+@mixin bg-gradient-white {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100&0+23,1+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(59,59,59,0) 23%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(59,59,59,0) 23%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(59,59,59,0) 23%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+// @mixin bg-gradient-white-reverse {
+// 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+100&0+23,1+100 */
+// background: url("/jnv6/img/bg/desk-bg-hd.jpg"), -moz-linear-gradient(bottom, rgba(0,0,0,0) 0%, rgba(59,59,59,0) 23%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+// background: url("/jnv6/img/bg/desk-bg-hd.jpg"), -webkit-linear-gradient(bottom, rgba(0,0,0,0) 0%,rgba(59,59,59,0) 23%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+// background: url("/jnv6/img/bg/desk-bg-hd.jpg"), linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(59,59,59,0) 23%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+// }
+
+@mixin bg-landing-stars {
+background: url("/jnv6/img/bg/stars-bg-hd.jpg"), -moz-linear-gradient(top, rgba(26,26,26,0) 0%, rgba(26,26,26,1) 100%); /* FF3.6-15 */
+background: url("/jnv6/img/bg/stars-bg-hd.jpg"), -webkit-linear-gradient(top, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: url("/jnv6/img/bg/stars-bg-hd.jpg"), linear-gradient(to bottom, rgba(26,26,26,0) 0%,rgba(26,26,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+$bg-test-grad: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(59,59,59,0) 23%,rgba(255,255,255,1) 100%);
