@@ -30,7 +30,10 @@ body {
 @media screen and (min-width: 775px) {
   .main-container {
     max-width: 95%;
-    p {max-width: 80%; text-align:left; margin: 0 auto; }
+    p {
+      // max-width: 80%; 
+      text-align:left;
+      margin: 0 auto; }
   }
   .main-container.row {flex-direction: row; align-items:flex-start;}
 }

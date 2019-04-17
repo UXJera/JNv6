@@ -34,6 +34,7 @@
     align-items: center;
   }
   img {
+    max-width: 900px;
     width: 100%;
     //@include border-shadow;
   }

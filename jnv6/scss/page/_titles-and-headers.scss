@@ -6,7 +6,7 @@ header h1 {padding-bottom: .25em;}
   h2, h3 {
     letter-spacing: .03em;
     text-align: left;
-    min-width: 80vw;
+    min-width: 90vw;
   }
   .main-container h2 {
     text-align: left;
@@ -33,4 +33,20 @@ header{
   h2 {font-size: 1.3em;}
   h3 {font-size: 1.15em;}
   h2, h3 {color: #666;}
+}
+
+@media screen and (min-width: 775px) {
+  .main-wrapper {
+    h2, h3{
+      min-width: 80vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .main-wrapper {
+    h2, h3{
+      min-width: 70vw;
+    }
+  }
 }

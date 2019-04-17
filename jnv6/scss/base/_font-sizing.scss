@@ -9,11 +9,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h3, h5, p {padding: .5rem 0;}
 
-h1 {font-size: 4rem; padding: .5rem;}
-h2 {font-size: 3rem; padding: .5rem;}
-h3 {font-size: 2rem; padding-top: 1rem;}
-h4 {font-size: 1.75rem; padding: .5rem;}
-h5 {font-size: 1.25rem; padding: .5rem;}
+h1 {font-size: 3rem; padding: .5rem;}
+h2 {font-size: 2rem; padding: .5rem;}
+h3 {font-size: 1.75rem; padding-top: 1rem;}
+h4 {font-size: 1.55rem; padding: .5rem;}
+h5 {font-size: 1.15rem; padding: .5rem;}
 h6 {font-size: .95rem; padding-bottom: .5rem;}
 p {
   letter-spacing: .02rem;
@@ -24,12 +24,25 @@ p {
 
 @media screen and (min-width: 600px) {
   * {font-size: 18px;}
+
 }
 
 @media screen and (min-width: 750px) {
   * {font-size: 20px;}
+  h1 {font-size: 4rem; padding: .5rem;}
+  h2 {font-size: 2.5rem; padding: .5rem;}
+  h3 {font-size: 1.95rem; padding-top: 1rem;}
+  h4 {font-size: 1.55rem; padding: .5rem;}
+  h5 {font-size: 1.25rem; padding: .5rem;}
+  h6 {font-size: .95rem; padding-bottom: .5rem;}
 }
 
 @media screen and (min-width: 960px) {
-  h1 {font-size: 6rem;}
+  h1 {font-size: 6rem; padding: .5rem;}
+  h2 {font-size: 3rem; padding: .5rem;}
+  h3 {font-size: 2rem; padding-top: 1rem;}
+  h4 {font-size: 1.75rem; padding: .5rem;}
+  h5 {font-size: 1.25rem; padding: .5rem;}
+  h6 {font-size: .95rem; padding-bottom: .5rem;}
+
 }
