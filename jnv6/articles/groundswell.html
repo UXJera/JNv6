@@ -16,7 +16,6 @@
 	<link rel="icon" href="/jnv6/favicon/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" type="text/css" href="/jnv6/css/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="/jnv6/articles/css/style.css"> -->
 
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
@@ -89,101 +88,103 @@
 			</div>
 			<div class="content-wrapper">
 				<div class="content-container">
-				<div>
-					<h3>Discovering the User</h3>
-					<p>When the project was first designed, it was a product that offered a service, but did not have an ideal user base in mind.</p>
-					<p>User interviews with several agriculturalists running greenhouse operations in multiple states, we discovered that our initial design was not a good fit for our targeted audience. Our product was complex and powerful, but our demographic didn't have the same grasp of software and statistics to allow an informed business decision. Our users wanted something they could look at briefly and inform what action needs to be taken.</p>
+					<h3>Change in Requirements</h3>
 
-					<div class="element-container">
-						<h5>Sample Greenhouse Questionnaire</h5>
-						<a href="https://docs.google.com/document/d/1XurgQB5t0UbzIw0ap6utN-TgnUxjoaxNoyZZpbXDo0M/edit?usp=sharing" target="_blank">
-							<img src="/jnv6/img/content/greenhouse/greenhouse-survey.jpg" alt="Questionnaire for the Greenhouse Project">
-						</a>
-						<figcaption>Script and questionnaire sheet when interviewing agriculturalists. Link to a section of the questionnaire (GoogleDocs)</figcaption>
-					</div>
+					<p>The largest obstacle to overcome was the lack of support from the payment vendor - meaning GroundSwell would have restricted access to the financial information of the user. That creates a problem of a banking application doesn’t have access to any financial information.</p>
 
-					<p>Personas and user profiles were built based on our meetings with greenhouse employees at all levels. We found three primary archetypes of users that would be using our product: the Boss, the Analyst, and the Worker.</p>
+					<p>With that change in requirement, our team explored opportunities to double-down on the purpose of the application - allowing users to make micro donations to support the non-profit of their choice.</p>
 
-					<div class="element-container">
+					<p>The team went into a discovery session to understand who the user is and what motives they might have for using the application. Whiteboarding ideals, motives, and hesitations gave us a clear direction, to create a community experience where users would be invested into their own avatar.</p>
+
+					<p>[[ Whiteboard Session Images ]]</p>
+
+					<!-- <div class="element-container">
 						<h5>Greenhouse Personas</h5>
 						<a href="/jnv6/img/content/greenhouse/greenhouse-persona.jpg" target="_blank">
 							<img src="/jnv6/img/content/greenhouse/greenhouse-persona.jpg" alt="Persona for the Greenhouse Project">
 						</a>
 						<figcaption>Perona created to understand the primary stakeholder for this project.</figcaption>
-					</div>
-
-					<p>Field studies uncovered that users spent more time trying to distinguish problematic plants and diagnosing what went wrong. The user would have to spend time testing the pH level, checking the water level, examining for mold or bugs, and taking time to correct the issues.</p>
-
-					<p>After visiting several greenhouses, our team went back to the drawing board to take what we learned and apply changes to make our software more valuable.</p>
+					</div> -->
 				</div>
+			</div>
+	
+		<div class="content-wrapper">
+			<div class="content-container">
+				<h3>Defining Delight</h3>
+
+				<p>With the centerpiece of this project moving away from financial information and creating a delightful experience. Our idea is to have a gamified element which changes based on activity with the application.</p>
+
+				<p>The next step was to involve the stakeholders to define the vision. Our team presented a variety of styles and animations, and together we defined “delight” in the context of GroundSwell.</p>
+
+				<div class="iframe-container">
+					<iframe 
+					src="https://docs.google.com/presentation/d/e/2PACX-1vRsRciS9dVRP28uoXrElDyUVxE0qdd6wO1cIwXUTk-db0eFcrDWtSzeBkQwSJ9XtoU3lsMwgL2nBZAa/embed?start=false&loop=false&delayms=5000" 
+					frameborder="0" 
+					width="960" 
+					height="569" 
+					allowfullscreen="true" 
+					mozallowfullscreen="true" 
+					webkitallowfullscreen="true"></iframe>
+				</div>
+
+				<p>The purpose of this presentation was to change the vision of the stakeholders and to let the imagination wander.</p>
+
+				<p>From this presentation, we were able to make a decision on how to approach delight and what theme to use going forward. The concept is a flourishing garden which invites visitors, who appear based on spending performance. This reinforces positive behavior and helps GroundSwell work towards their business objectives.</p>
+
 			</div>
 		</div>
 		<div class="content-wrapper">
 			<div class="content-container">
-				<h3>Reinventing the Product</h3>
-				<p>After our visits at the greenhouses, our team needed to generate a revised list of product requirements, both for our project team and what features our potential clients need.</p>
-				<p>Our list of product features needed to be refined; a large number of initial release requirements, such as statistical analysis, were moved to a future release. Our list narrowed from 9 release requirements to 4.</p>
+				<h3>Logic and Animation</h3>
+				<p>After exploring the concept of delight, our team needed to focus our efforts on a tangible product. Our solution is the creation of a landscape that grows and attracts visitors through positive reinforcement.</p>
 
 				<div class="element-container">
-					<h5>Requirements and Specifications</h5>
-					<div class="element-text">
-						<h6>Business Requirements:</h6>
-						<ul class="ul-list">
-							<li>Affordable prototype and MVP</li>
-							<li>Ability to scale with features</li>
-							<li>Sellable product to our intended market</li>
-						</ul>
-						<h6>Release Features:</h6>
-						<ul class="ul-list">
-							<li>Real-time data monitoring</li>
-							<li>Push alerts to warn of data that falls out of range</li>
-							<li>Out-of-the-box functionality (no assembly required)</li>
-							<li>Mobile and Desktop accessibility</li>
-						</ul>
-						<h6>Future Features:</h6>
-						<ul class="ul-list">
-							<li>Statistical analysis for own ecosystem</li>
-							<li>Statistical analysis for cross-ecosystems for all clients</li>
-							<li>Consultation feature for strategy and future planning</li>
-							<li>Automation for adjusting light levels, pH, so-on</li>
-							<li>AI pattern analysis for suggested optimal growing actions</li>
-						</ul>
-					</div>
-					<figcaption>Above are a simplified requirements and features list for the Greenhouse project.</figcaption>
-				</div>
-				<p>Once we had our new list of business requirements, our team went back to our potential clients and performed a survey confirming which requirements are most valuable to them - an affordable and easy-to-use product that provides real-time measurement.</p>
+					<h5>Animation Sample</h5>
+					<a target="_blank" href="http://jeremiahnyman.com/jnv6/playground/groundswell-demo/gs-demo.html">
 
-				<h3>Competitive Analysis</h3>
-				<p>Understanding the business model of our competitors gave us the opportunity to improve our own business model. Our lead competitor sells itemized modules for each sensor, along with services to access the sensor data.</p>
-				<p>Our initial plan was to sell our sensor package accompanied with our full software service for a one-time cost. Project Greenhouse learned from the competitors that the subscription model of data analytics as a service should be leveraged.</p>
+						<img src="/jnv6/img/content/groundswell/4-butterfly.png" />
 
-				<!-- <h3>Designing the UI</h3>
-				<p>Our most recent stage is making all of the transmitted data available on a mobile device screen. I started by brainstorming with the team and asking a series of questions:</p>
-				<ul class="ul-list">
-					<li>Where are the user's going to use this? In an office setting or inside the greenhouse?</li>
-					<li>What key features are needed upon MVP release?</li>
-					<li>What is the best way to go about visually representing the data?</li>
-					<li>How should we organize the displayed information? By category? By plant location?</li>
-					<li>Which metrics are going to be the most important? How do we allow users to traverse between metrics?</li>
-					<li>How much information is TOO MUCH information? When will the application become too taxed and break?</li>
-				</ul>
-
-				<div class="element-container">
-					<h5>Concept Sketch</h5>
-					<a href="/jnv6/img/content/greenhouse/ui-design.jpg" target="_blank">
-						<img src="/jnv6/img/content/greenhouse/ui-design-small.jpg" alt="Personas for the Greenhouse Project">
 					</a>
-					<figcaption>The image above shows some of the UI considerations for the Greenhouse App. Link to a larger canvas showing more design considerations.</figcaption>
-				</div> -->
+					<figcaption>The example of the animation timeline. Click for the full demo.</figcaption>
+				</div>
 
-					<h3>The Next Steps</h3>
-					<p>Since our team has been able to take a strategic approach to discovering our user's needs, we had an easier time bringing our idea to a tangible product. We have changed our process of how we evaluate new features in order to get a product completed in a reasonable time.</p>
-					<p>My research gave a succinct problem statement to the designers and product owner, which makes it easier to create a good solution. The team is focused on reaching the goal of an MVP, and less concerned about including all of the desired features that were wanted upon initial release.</p>
+				<p></p>
+
+			</div>
 		</div>
-	</div>
+		<div class="content-wrapper">
+			<div class="content-container">
+				<h3>Wireframe and Visual Design</h3>
+				<p>Realigning from a banking application into something more personal also means that the original design must be revised. The amount of information relating towards banking is deliberately reduced.</p>
+				<p>The focus of the new design gives more emphasis towards the delight and community reach of the application, while including simplified financial metrics.</p>
+
+				<p> [[ Old Wires vs New Visual Design ]]</p>
+			</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="content-container">
+				<h3>Final Deliverable</h3>
+				<p>Tadaa! Here’s the thing we did!</p>
+			</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="content-container">
+				<h3>In what ways has the business improved by solving this problem?</h3>
+				<p>GroundSwell now has a demonstrable product that is market live!</p>
+
+				<p> [[ Proto Demo of "Live" ]] </p>
+
+				<h3>Reflections and Lessons</h3>
+				<ul>
+					<li>Prioritization of resources</li>
+					<li>Client expectation and management</li>
+					<li>Scope creep</li>
+				</ul>
+			</div>
+		</div>
+
 </div>
 	<div ng-include src="'/jnv6/assets/footer.url'"></div>
-
 </div>
 </main>
 

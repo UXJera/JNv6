@@ -19,7 +19,7 @@ gulp.task('build-css', function(cb) {
 
       // output non-minified CSS file and map the scss
       .pipe(map.init())
-      .pipe(sass({
+      .pipe(sass.sync({
          outputStyle : 'expanded'
       }).on('error', sass.logError))
       .pipe(map.write())

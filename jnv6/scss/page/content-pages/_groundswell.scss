@@ -1,0 +1,58 @@
+.gs-animation-container {
+	background: red;
+}
+
+.gs-animation-container .bg-image img {
+		display: block;  
+		height: auto; 
+		position: relative; 
+		width: 90vw;
+		top: 5vh; 
+		padding: 0 5vw;
+	}
+	.gs-animation-container .bg-image img {
+		display: block;  
+		height: auto; 
+		position: relative; 
+		width: 100vw;
+		top: 5vh; 
+		padding: 0;
+	}
+	
+	
+	.rotating-item {
+		position:absolute; 
+		top:5vh; 
+		left:5vw;   
+		width: 90vw; 
+		height: auto; 
+		display: none;
+	}
+	.rotating-item {
+		position:absolute; 
+		top:5vh;
+		left: 0;   
+		width: 100vw; 
+		height: auto; 
+		display: none;
+	}
+
+	.mobile-center-stack{
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 720px){
+	.gs-animation-container .bg-image img {
+		display: block;  
+		width: 50vw;
+		padding: 0 25vw; 
+	}
+	
+	.rotating-item {
+		position:absolute; 
+		top:5vh; 
+		left:25vw;   
+		width: 50vw;
+		}
+}
