@@ -53,8 +53,10 @@
 					<div>
 						<h2>Overview</h2>
 						<p>In a world where millennials are the emerging market demographic, non-profit organizations must find novel ways to raise funds to sustain their mission. The GroundSwell Card program allows non-profit organizations to appeal to donors with and without disposable income, crowd-sourcing microdonations that otherwise would have been absorbed by bank fees.</p>
+
 						<p>GroundSwell is a client that had to take a unique pivot to save the fidelity of their product. Through clever analysis of altruistic behaviors, we were able to create an engaging experience that turns a banking application into a do-good feel-good application.</p>
 					</div>
+
 					<div>
 						<h3>The Challenge</h3>
 						<p>A requirement to be a finanical application is access to real-time banking data (via API endpoints). After the initial design, our team was informed that we would not have real-time access to metrics, and would only be given a data dump one every 24 hours.</p>
@@ -82,8 +84,9 @@
 					</div>
 					<div>
 						<h3>Is this better than the alternative?</h3>
-						<p>There are tons of financial applications out there, and the idea of diverting institutional fees from prepaid debit cards isn't a new feature. The competitive advantage is taking those institutional fees and giving back to Non Profit Orgs. This satisfies a painless, altruistic need to make a difference in the world while not changing any pre-existing behavior.</p>
+						<p>There are many financial applications on the market, and the idea of diverting institutional fees from prepaid debit cards isn't a new feature. The competitive advantage is taking those institutional fees and giving back to Non Profit Orgs. This satisfies a painless, altruistic need to make a difference in the world while not changing any pre-existing behavior.</p>
 					</div>
+
 				</div>
 			</div>
 			<div class="content-wrapper">
@@ -94,17 +97,10 @@
 
 					<p>With that change in requirement, our team explored opportunities to double-down on the purpose of the application - allowing users to make micro donations to support the non-profit of their choice.</p>
 
-					<p>The team went into a discovery session to understand who the user is and what motives they might have for using the application. Whiteboarding ideals, motives, and hesitations gave us a clear direction, to create a community experience where users would be invested into their own avatar.</p>
+					<p>The team a workshop to understand who the user is and what motives they might have for using the application. Whiteboarding ideals, motives, and hesitations gave us a clear direction in which to create a community experience where users would be invested into their own avatar.</p>
 
-					<p>[[ Whiteboard Session Images ]]</p>
+					<!-- <p>[[ Whiteboard Session Images ]]</p> -->
 
-					<!-- <div class="element-container">
-						<h5>Greenhouse Personas</h5>
-						<a href="/jnv6/img/content/greenhouse/greenhouse-persona.jpg" target="_blank">
-							<img src="/jnv6/img/content/greenhouse/greenhouse-persona.jpg" alt="Persona for the Greenhouse Project">
-						</a>
-						<figcaption>Perona created to understand the primary stakeholder for this project.</figcaption>
-					</div> -->
 				</div>
 			</div>
 	
@@ -127,59 +123,111 @@
 					webkitallowfullscreen="true"></iframe>
 				</div>
 
-				<p>The purpose of this presentation was to change the vision of the stakeholders and to let the imagination wander.</p>
-
-				<p>From this presentation, we were able to make a decision on how to approach delight and what theme to use going forward. The concept is a flourishing garden which invites visitors, who appear based on spending performance. This reinforces positive behavior and helps GroundSwell work towards their business objectives.</p>
+				<p>The purpose of this presentation was to change the vision of the stakeholders and to let the imagination wander. The outcome alloewed us to make a decision on how to approach delight and what theme to use going forward. The concept is a flourishing garden which invites visitors, who appear based on spending performance. This reinforces positive behavior and helps GroundSwell work towards their business objectives.</p>
 
 			</div>
 		</div>
 		<div class="content-wrapper">
 			<div class="content-container">
-				<h3>Logic and Animation</h3>
+				<h3>Animation and Logic</h3>
 				<p>After exploring the concept of delight, our team needed to focus our efforts on a tangible product. Our solution is the creation of a landscape that grows and attracts visitors through positive reinforcement.</p>
 
 				<div class="element-container">
 					<h5>Animation Sample</h5>
 					<a target="_blank" href="http://jeremiahnyman.com/jnv6/playground/groundswell-demo/gs-demo.html">
 
-						<img src="/jnv6/img/content/groundswell/4-butterfly.png" />
+						<img style="background:white;" src="/jnv6/img/content/groundswell/butterfly_animation.png" />
 
 					</a>
-					<figcaption>The example of the animation timeline. Click for the full demo.</figcaption>
+					<figcaption>The sample of the animation blocked out. Click for the full demo.</figcaption>
 				</div>
 
-				<p></p>
+				<p>The image above is a sample animation that we built to add gamification to the application. The second part of the animation was determining the logic for the items to be called.</p>
+
+				<p>Our task was to create programming logic for showing specific sequences of animations. Once a user reaches a milestone, the guest creature would visit the farm. Working with development, we developed a fixed variable reinforcement schedule which rewards users who completed a task recently, or continuously. This reinforcement schedule encourages the user to stay engagemed with the application and using the card for purchases.</p>
+
+				<p>A compromise for the MVP was that we were not able to include a robust reinforcement model, but instead went with a "once complete, always complete" model. The advantage is that the user will clearly understand what behavior gave this result, and is less intimidating to early-adopting users.</p>
 
 			</div>
 		</div>
+
+		<div class="content-wrapper">
+			<div class="content-container">
+				<h3>Managing Offshore Resources</h3>
+				<p>One of my responsibilities was managing an offshore team. Our resources matched me with a technical project manager and four developers.</p>
+				<p>Communicating design decisions to remote developers was another challenging task. The offshore development team was not included in design conversations and did not have a breadth of context for the project.</p>
+				<p>The first hurdle was explaining the logic for the delight module of the application. The best method of communiucating design came from a html prototype articulating the decision.</p>
+
+				
+				<div class="iframe-container">
+					<iframe 
+					src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRy3y-hMJZ6rrbWYpNcdi-N4ul74CE7v4zfrrnGKc1dWQXc8AxR43cN7B7uJekaXipV6zbfkaAfK9zt/pubhtml?gid=837858154&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+				</div>
+
+				<p>Providing documentation, like the sheet above, aided in the understanding of the design of the offshore team. The benefits of preparation outweigh the time that would have been spent explaining and clarifying to that team. These efforts reduced the number of meetings needed to implement this concept, saving billabile hours for the client.</p>
+
+			</div>
+		</div>
+
 		<div class="content-wrapper">
 			<div class="content-container">
 				<h3>Wireframe and Visual Design</h3>
+
 				<p>Realigning from a banking application into something more personal also means that the original design must be revised. The amount of information relating towards banking is deliberately reduced.</p>
+
 				<p>The focus of the new design gives more emphasis towards the delight and community reach of the application, while including simplified financial metrics.</p>
 
-				<p> [[ Old Wires vs New Visual Design ]]</p>
+				<div class="element-container">
+					<h5>Early Wires into Visual Design</h5>
+					<a target="_blank" href="/jnv6/img/content/groundswell/gs-wires-to-vd.png">
+
+						<img src="/jnv6/img/content/groundswell/gs-wires-to-vd.png" />
+
+					</a>
+					<figcaption>The evolution of design from early concept wireframes into visual design.</figcaption>
+				</div>
+
+				<p>Our solution was to integrate NPO content into the design. Non-profit organizations have another channel to spread their message, and the design encourages NPOs to be more involved with content generation. The end user will see their contributions in action, and understand where their money is going and the impact it makes.</p>
+				
+
 			</div>
 		</div>
+
 		<div class="content-wrapper">
 			<div class="content-container">
-				<h3>Final Deliverable</h3>
-				<p>Tadaa! Here’s the thing we did!</p>
+				<h3>The Impact</h3>
+
+				<p>Completing the MVP brought many benefits to our team and our stakeholders. GroundSwell, as a company, is starting to get a larger user base and generating revenue from the service. Users are providing valuable feedback which will guide the next iterations of the product.</p>
+				
+				<p>Users are now able to contribute to a Non-Profit Organization with minimal distruption from their day-to-day life, thanks to the GroundSwell card. </p>
+
+				<p>NPOs are given a new revenue stream and media outreach platform. With wide-spread adoption of the GroundSwell app, organizations will have more resources to make the world a better place.</p>
+
+				<div class="element-container">
+					<h5>Finalized Animation - Bees</h5>
+					<img style="background:white;" src="/jnv6/img/content/groundswell/bees_animation.png" />
+
+					<figcaption>Delight animation for the bees.</figcaption>
+				</div>
+
+
+				<p>Want to find out more about GroundSwell and how you can make a difference? <a target="_blank" href="https://groundswellworld.com/">Visit the official GroundSwell website.</a></p>
 			</div>
 		</div>
+
 		<div class="content-wrapper">
 			<div class="content-container">
-				<h3>In what ways has the business improved by solving this problem?</h3>
-				<p>GroundSwell now has a demonstrable product that is market live!</p>
-
-				<p> [[ Proto Demo of "Live" ]] </p>
-
 				<h3>Reflections and Lessons</h3>
-				<ul>
-					<li>Prioritization of resources</li>
-					<li>Client expectation and management</li>
-					<li>Scope creep</li>
-				</ul>
+				<p>Overall, this was a challenging project that gave an opportunity for creative problem solving to shine. The "no financial data" constraint forced a pivot in the direction of the application. The adaptive thinking that our team did truly saved this product from being "just another banking application" and turned into a community experience.</p>
+				<p>An area where our team could use work is the production of animation. This ended up taking a majority of our time, since this is an area where we do not have as much experience. A solution would have been the contracting of a dedicated animator or allowing more time in sprint planning.</p>
+				<p>This was my first team completely managing offshore resources for development and production. My experience has been positive, and our interactions were productive. In previous teams that I've worked with (but not led), there was general disorganization about what tasks were being worked on and lack of communication for project status. This time it was the opposite, the team followed the sprint plan and only needed minimal guidance.</p>
+
+				<div class="element-container">
+					<h5>Visual Design</h5>
+					<img src="/jnv6/img/content/groundswell/impact.png" />
+					<figcaption>The final visual design - output for promotional usage.</figcaption>
+				</div>
+
 			</div>
 		</div>
 

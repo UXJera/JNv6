@@ -2,7 +2,10 @@
 
 body {background: #333;overflow-x: hidden;}
 
-main {min-width: 100vw; overflow-x: hidden;}
+main {
+  min-width: 100vw; 
+  //overflow-x: hidden;
+}
 
 .side-nav.isClosed {
   display:none;
