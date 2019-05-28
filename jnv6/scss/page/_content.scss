@@ -4,7 +4,7 @@
 }
 
 .content-wrapper {
-  padding: 2rem 0 1rem 0;
+  padding: 1rem 0;
   width: 100%;
   @include flex-center;
   @include fonts-header;
@@ -18,7 +18,7 @@
     }
   }
   &:nth-of-type(odd) {background: $color-1; color:$color-5;}
-  box-shadow: inset 0px 0px 15px black;
+  //box-shadow: inset 0px 0px 15px black;
 }
 
 // HEADER IMAGE FOR HEROIC KNIGHT GAMES
